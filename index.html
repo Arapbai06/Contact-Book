@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Book</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Contact Book</h1>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" required />
+      <button type="submit">Add Contact</button>
+    </form>
+    <ul id="contactList"></ul>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <label for="newName">New Name:</label>
+        <input type="text" id="newName" />
+        <label for="newPhone">New Phone:</label>
+        <input type="tel" id="newPhone" />
+        <button id="saveChanges">Save Changes</button>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
